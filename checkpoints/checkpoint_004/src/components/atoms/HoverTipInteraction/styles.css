@@ -1,0 +1,22 @@
+@import "../../properties.css";
+
+.root {
+  position: relative;
+}
+
+.tip {
+  display: none;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -100%) translateY(-12px);
+  white-space: nowrap;
+}
+
+.root:hover > .tip {
+  display: inline-block;
+}
+
+.root:hover > .marker {
+  background-color: var(--color-selected);
+}

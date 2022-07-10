@@ -1,0 +1,13 @@
+@import "../../properties.css";
+
+.textbox {
+  margin-right: var(--space);
+  width: calc(var(--space) * 60);
+}
+
+.label {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  padding-bottom: calc(var(--space) * 2);
+}

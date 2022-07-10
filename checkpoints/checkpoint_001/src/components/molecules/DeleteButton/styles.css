@@ -1,0 +1,17 @@
+.root {
+  display: inline-block;
+  position: relative;
+}
+
+.root > *:first-child + * {
+  display: none;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -100%) translateY(-12px);
+  white-space: nowrap;
+}
+
+.root > *:first-child:hover + * {
+  display: inline-block;
+}

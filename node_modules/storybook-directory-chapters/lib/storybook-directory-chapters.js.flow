@@ -1,0 +1,8 @@
+// @flow
+
+type Context = (Iterator<string> & () => any);
+
+declare module 'storybook-directory-chapters' {
+  declare function loadDirectories(context: Context): void;
+  declare type Context = Context;
+}
