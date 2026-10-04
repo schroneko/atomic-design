@@ -16,14 +16,17 @@
     "report:visual": "backstop openReport",
     "build": "mkdirp ./build && cpx \"./src/index.html\" ./build && cpx \"./assets/**/*.*\" ./build && webpack && ws -d ./build",
     "svg": "svg-sprite-generate -d ./assets/icons -o ./assets/icons.svg",
-    "checkpoint": "node scripts/checkpoint.js"
+    "checkpoint": "node scripts/checkpoint.js",
+    "postinstall": "node scripts/apply-security-patches.cjs",
+    "test:security": "node --test tests/middleware-security.test.cjs"
   },
   "dependencies": {
     "moment": "^2.19.2",
     "react": "15.6.2",
     "react-addons-perf": "^15.4.2",
     "react-dom": "15.6.2",
-    "recompose": "^0.26.0"
+    "recompose": "^0.26.0",
+    "patch-package": "8.0.1"
   },
   "devDependencies": {
     "@storybook/addon-actions": "3.2.16",
