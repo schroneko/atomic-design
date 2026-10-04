@@ -7,8 +7,8 @@
       "height": 768
     }
   ],
-  "onBeforeScript": "chromy/onBefore.js",
-  "onReadyScript": "chromy/onReady.js",
+  "onBeforeScript": "puppeteer/onBefore.js",
+  "onReadyScript": "puppeteer/onReady.js",
   "scenarios": [
     {
       "label": "Balloon 4文字ラベル",
@@ -34,7 +34,7 @@
     "ci_report": "backstop_data/ci_report"
   },
   "report": ["browser"],
-  "engine": "chrome",
+  "engine": "puppeteer",
   "engineFlags": [],
   "asyncCaptureLimit": 5,
   "asyncCompareLimit": 50,
