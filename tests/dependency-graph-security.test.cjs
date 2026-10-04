@@ -1,0 +1,1 @@
+const test=require("node:test");const assert=require("node:assert/strict");const fs=require("node:fs");test("modern Storybook excludes vulnerable Webpack middleware",()=>{assert.equal(/webpack-dev-middleware@/.test(fs.readFileSync("yarn.lock","utf8")),false)});
